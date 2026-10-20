@@ -11,7 +11,7 @@ export default function Glass() {
           <nav className="breadcrumb">
             <Link to="/">Home</Link> <span>/</span> <span>Glass Options</span>
           </nav>
-          <span className="eyebrow" style={{ color: '#C5A880' }}>Pure Clarity & Certified Safety</span>
+          <span className="eyebrow" style={{ color: 'var(--color-accent-dark)' }}>Pure Clarity & Certified Safety</span>
           <h1>Architectural Shower Glass</h1>
           <p>
             Discover our range of thermally toughened safety glass variants, engineered with precision chamfered edges, flawless optical transparency, and hydrophobic surface protection.
@@ -210,7 +210,7 @@ export default function Glass() {
             </div>
 
             {/* EasyClean Hydrophobic Shield */}
-            <div style={{ background: 'var(--color-accent-light)', borderRadius: 'var(--radius-lg)', padding: '2.5rem', border: '1px solid rgba(197, 168, 128, 0.4)' }}>
+            <div style={{ background: 'var(--color-accent-light)', borderRadius: 'var(--radius-lg)', padding: '2.5rem', border: '1px solid rgba(51, 156, 211, 0.4)' }}>
               <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>💧</div>
               <h3 style={{ marginBottom: '0.75rem' }}>EasyClean Hydrophobic Nano-Shield</h3>
               <p style={{ fontSize: '0.95rem', marginBottom: '1.25rem' }}>
@@ -232,7 +232,7 @@ export default function Glass() {
         <div className="container">
           <div className="send-bathroom-banner">
             <div className="banner-content">
-              <span className="eyebrow" style={{ color: '#C5A880' }}>Need Glass Samples?</span>
+              <span className="eyebrow" style={{ color: 'var(--color-accent-on-dark)' }}>Need Glass Samples?</span>
               <h2 className="banner-title">Touch & Experience Our Glass Swatches</h2>
               <p className="banner-desc">Our technical engineer brings physical sample swatches of our Clear, Low-Iron, Fluted, and Frosted glass directly to your site during the laser measurement survey.</p>
               <div className="banner-actions">

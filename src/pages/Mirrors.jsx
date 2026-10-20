@@ -77,7 +77,7 @@ export default function Mirrors() {
           <nav className="breadcrumb">
             <Link to="/">Home</Link> <span>/</span> <span>Smart LED Mirrors</span>
           </nav>
-          <span className="eyebrow" style={{ color: '#C5A880' }}>Shadowless Illumination &amp; Smart Controls</span>
+          <span className="eyebrow" style={{ color: 'var(--color-accent-dark)' }}>Shadowless Illumination &amp; Smart Controls</span>
           <h1>Smart LED Vanity Mirrors</h1>
           <p>
             Architectural bathroom mirrors crafted from 5mm copper-free float glass, equipped with feather-touch sensors, 3-color tone lighting, and rapid anti-fog demisters tailored as per your bathroom vanity specifications.
@@ -272,7 +272,7 @@ export default function Mirrors() {
         <div className="container">
           <div className="send-bathroom-banner">
             <div className="banner-content">
-              <span className="eyebrow" style={{ color: '#C5A880' }}>Custom Vanity Dimensions?</span>
+              <span className="eyebrow" style={{ color: 'var(--color-accent-on-dark)' }}>Custom Vanity Dimensions?</span>
               <h2 className="banner-title">Get Your Mirror Custom Sized During Your Site Visit</h2>
               <p className="banner-desc">
                 Our technician measures your bathroom vanity width, backsplash tile lines, and electrical outlet placement during the laser survey to produce a custom-fitted LED mirror.

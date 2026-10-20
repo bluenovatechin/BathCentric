@@ -242,8 +242,8 @@ export default function Home() {
                     position: 'absolute',
                     top: '12px',
                     left: '12px',
-                    background: 'rgba(14, 16, 19, 0.85)',
-                    color: '#C5A880',
+                    background: 'rgba(14, 31, 46, 0.85)',
+                    color: 'var(--color-accent-on-dark)',
                     padding: '4px 12px',
                     fontSize: '0.75rem',
                     fontWeight: 600,
@@ -283,8 +283,8 @@ export default function Home() {
                     position: 'absolute',
                     top: '12px',
                     left: '12px',
-                    background: 'rgba(14, 16, 19, 0.85)',
-                    color: '#C5A880',
+                    background: 'rgba(14, 31, 46, 0.85)',
+                    color: 'var(--color-accent-on-dark)',
                     padding: '4px 12px',
                     fontSize: '0.75rem',
                     fontWeight: 600,
@@ -324,8 +324,8 @@ export default function Home() {
                     position: 'absolute',
                     top: '12px',
                     left: '12px',
-                    background: 'rgba(14, 16, 19, 0.85)',
-                    color: '#C5A880',
+                    background: 'rgba(14, 31, 46, 0.85)',
+                    color: 'var(--color-accent-on-dark)',
                     padding: '4px 12px',
                     fontSize: '0.75rem',
                     fontWeight: 600,
@@ -360,7 +360,7 @@ export default function Home() {
 
         <div className="container">
           <div className="wet-dry-banner">
-            <span className="eyebrow" style={{ color: '#C5A880' }}>The BathCentric Advantage</span>
+            <span className="eyebrow" style={{ color: 'var(--color-accent-on-dark)' }}>The BathCentric Advantage</span>
             <h2>Why Modern Bathrooms Need a Wet &amp; Dry Division</h2>
             <p style={{ maxWidth: '720px', color: 'rgba(255, 255, 255, 0.85)' }}>
               In traditional Indian bathrooms without glass partitions, taking a single shower wets the entire room — soaking the toilet, fogging the vanity mirror, and creating dangerous slippery floors. Our glass enclosures solve this permanently.
@@ -379,7 +379,7 @@ export default function Home() {
 
               <div className="dry-box">
                 <h4>✨ With BathCentric Glass Partition</h4>
-                <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.92rem', color: '#F3E7D3' }}>
+                <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.92rem', color: '#BFE2F5' }}>
                   <li>• 100% of shower spray stays inside the wet zone</li>
                   <li>• Vanity, mirror, and toilet area remain completely dry and clean</li>
                   <li>• Safe for children, elderly parents, and guests</li>
@@ -499,7 +499,7 @@ export default function Home() {
 
           <div className="grid-2" style={{ gap: '32px' }}>
             {/* Mirror Card */}
-            <article className="feature-card" style={{ background: '#F9F7F3', border: '1px solid var(--color-border)', padding: '28px', borderRadius: '12px' }}>
+            <article className="feature-card" style={{ background: 'var(--color-bg-light)', border: '1px solid var(--color-border)', padding: '28px', borderRadius: '12px' }}>
               <div style={{ position: 'relative', borderRadius: '8px', overflow: 'hidden', aspectRatio: '3/2', marginBottom: '20px' }}>
                 <img
                   src="/images/mirror-arch.jpg"
@@ -512,8 +512,8 @@ export default function Home() {
                     position: 'absolute',
                     top: '12px',
                     left: '12px',
-                    background: 'rgba(14, 16, 19, 0.85)',
-                    color: '#C5A880',
+                    background: 'rgba(14, 31, 46, 0.85)',
+                    color: 'var(--color-accent-on-dark)',
                     padding: '4px 12px',
                     fontSize: '0.75rem',
                     fontWeight: 600,
@@ -547,7 +547,7 @@ export default function Home() {
             </article>
 
             {/* Drain Card */}
-            <article className="feature-card" style={{ background: '#F9F7F3', border: '1px solid var(--color-border)', padding: '28px', borderRadius: '12px' }}>
+            <article className="feature-card" style={{ background: 'var(--color-bg-light)', border: '1px solid var(--color-border)', padding: '28px', borderRadius: '12px' }}>
               <div style={{ position: 'relative', borderRadius: '8px', overflow: 'hidden', aspectRatio: '3/2', marginBottom: '20px' }}>
                 <img
                   src="/images/drain-tile-insert.jpg"
@@ -560,8 +560,8 @@ export default function Home() {
                     position: 'absolute',
                     top: '12px',
                     left: '12px',
-                    background: 'rgba(14, 16, 19, 0.85)',
-                    color: '#C5A880',
+                    background: 'rgba(14, 31, 46, 0.85)',
+                    color: 'var(--color-accent-on-dark)',
                     padding: '4px 12px',
                     fontSize: '0.75rem',
                     fontWeight: 600,
@@ -812,7 +812,7 @@ export default function Home() {
         <div className="container">
           <div className="send-bathroom-banner">
             <div className="banner-content">
-              <span className="eyebrow" style={{ color: '#C5A880' }}>Zero Cost Consultation</span>
+              <span className="eyebrow" style={{ color: 'var(--color-accent-on-dark)' }}>Zero Cost Consultation</span>
               <h2 className="banner-title">Book a Free Doorstep Site Visit or Send Your Bathroom Photos</h2>
               <p className="banner-desc">
                 Whether renovating an existing bathroom or building a new home, get 100% free doorstep measurement and layout consultation. Our specialist will analyze your plumbing, calculate exact clearances, and provide a clear quote.

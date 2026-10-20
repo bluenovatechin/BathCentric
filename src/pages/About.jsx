@@ -11,7 +11,7 @@ export default function About() {
           <nav className="breadcrumb">
             <Link to="/">Home</Link> <span>/</span> <span>About</span>
           </nav>
-          <span className="eyebrow" style={{ color: '#C5A880' }}>The BathCentric Philosophy</span>
+          <span className="eyebrow" style={{ color: 'var(--color-accent-dark)' }}>The BathCentric Philosophy</span>
           <h1>Architectural Bathroom Solutions</h1>
           <p>
             We founded BathCentric on a singular principle: your bathroom is an intimate architectural retreat. We engineer custom architectural glass, luxury solid brass accessories, and bespoke shower enclosures that harmonize in beauty and longevity.
@@ -67,7 +67,7 @@ export default function About() {
             {/* 1. Custom Bathroom Design & Implementation */}
             <div className="grid-2" style={{ alignItems: 'center' }}>
               <div>
-                <span className="eyebrow" style={{ color: '#C5A880' }}>01 • From Blueprint To Reality</span>
+                <span className="eyebrow" style={{ color: 'var(--color-accent-dark)' }}>01 • From Blueprint To Reality</span>
                 <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>
                   Bespoke Bathroom Design &amp; Implementation
                 </h3>
@@ -106,7 +106,7 @@ export default function About() {
             {/* 2. Bathroom Redesign & Renovation */}
             <div className="grid-2" style={{ alignItems: 'center', direction: 'rtl' }}>
               <div style={{ direction: 'ltr' }}>
-                <span className="eyebrow" style={{ color: '#C5A880' }}>02 • Upgrading Existing Spaces</span>
+                <span className="eyebrow" style={{ color: 'var(--color-accent-dark)' }}>02 • Upgrading Existing Spaces</span>
                 <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>
                   Bathroom Redesign &amp; Complete Renovation
                 </h3>
@@ -145,7 +145,7 @@ export default function About() {
             {/* 3. Preventive Maintenance & Care */}
             <div className="grid-2" style={{ alignItems: 'center' }}>
               <div>
-                <span className="eyebrow" style={{ color: '#C5A880' }}>03 • Protecting Your Investment</span>
+                <span className="eyebrow" style={{ color: 'var(--color-accent-dark)' }}>03 • Protecting Your Investment</span>
                 <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>
                   Specialized Maintenance &amp; Care Services
                 </h3>

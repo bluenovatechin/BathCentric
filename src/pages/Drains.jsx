@@ -63,7 +63,7 @@ export default function Drains() {
           <nav className="breadcrumb">
             <Link to="/">Home</Link> <span>/</span> <span>Linear Floor Drains</span>
           </nav>
-          <span className="eyebrow" style={{ color: '#C5A880' }}>Discreet Water Evacuation &amp; Pest Protection</span>
+          <span className="eyebrow" style={{ color: 'var(--color-accent-dark)' }}>Discreet Water Evacuation &amp; Pest Protection</span>
           <h1>Architectural Linear Floor Drains</h1>
           <p>
             Seamless AISI-304 stainless steel linear shower drains, tile-insert channels, and mechanical anti-cockroach traps engineered for rapid drainage and clean single-slope bathroom floor tiling.
@@ -239,7 +239,7 @@ export default function Drains() {
       <section className="section" style={{ backgroundColor: '#ffffff' }}>
         <div className="container">
           <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center', marginBottom: '48px' }}>
-            <span className="eyebrow" style={{ color: '#C5A880' }}>Architectural Solution</span>
+            <span className="eyebrow" style={{ color: 'var(--color-accent-dark)' }}>Architectural Solution</span>
             <h2>Solving the Indian Bathroom Wet/Dry Dilemma</h2>
             <p style={{ color: '#555', fontSize: '1.05rem', lineHeight: 1.7 }}>
               In traditional Indian bathrooms, water from bucket showers or rainheads spreads across the entire floor, keeping the WC and vanity areas perpetually damp. BathCentric pairs custom glass partitions with linear floor drains to create a permanent hygienic partition.

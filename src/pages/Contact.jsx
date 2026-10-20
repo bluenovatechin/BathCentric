@@ -19,7 +19,7 @@ export default function Contact() {
           <nav className="breadcrumb">
             <Link to="/">Home</Link> <span>/</span> <span>Contact</span>
           </nav>
-          <span className="eyebrow" style={{ color: '#C5A880' }}>Get In Touch</span>
+          <span className="eyebrow" style={{ color: 'var(--color-accent-dark)' }}>Get In Touch</span>
           <h1>We Are Here To Assist Your Project</h1>
           <p>
             Whether you need technical advice on door swing clearances, glass load specifications, or scheduling an on-site laser survey, our advisors respond promptly.

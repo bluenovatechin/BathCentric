@@ -165,7 +165,7 @@ export default function Hardware() {
           <nav className="breadcrumb">
             <Link to="/">Home</Link> <span>/</span> <span>Bathroom Accessories &amp; Hardware</span>
           </nav>
-          <span className="eyebrow" style={{ color: '#C5A880' }}>Architectural Accessories &amp; Engineering</span>
+          <span className="eyebrow" style={{ color: 'var(--color-accent-dark)' }}>Architectural Accessories &amp; Engineering</span>
           <h1>Luxury Bathroom Accessories &amp; Hardware</h1>
           <p>
             We craft everything for your bathroom: from solid brass towel rails, designer hooks, floating glass shelves, and linear drains to precision-engineered shower hinges and rollers — all harmonized in flawless PVD finishes.
@@ -277,7 +277,7 @@ export default function Hardware() {
         <div className="container">
           <div className="send-bathroom-banner">
             <div className="banner-content">
-              <span className="eyebrow" style={{ color: '#C5A880' }}>Our Guarantee</span>
+              <span className="eyebrow" style={{ color: 'var(--color-accent-on-dark)' }}>Our Guarantee</span>
               <h2 className="banner-title">5-Year Comprehensive Warranty on All Accessories &amp; Hardware</h2>
               <p className="banner-desc">
                 Every towel rail, hook, hinge, handle, track, and bracket installed by BathCentric is covered by our 5-year replacement warranty against mechanical failure, sagging, peeling, or corrosion.

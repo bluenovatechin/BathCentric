@@ -92,7 +92,7 @@ export default function Projects() {
           <nav className="breadcrumb">
             <Link to="/">Home</Link> <span>/</span> <span>Projects</span>
           </nav>
-          <span className="eyebrow" style={{ color: '#C5A880' }}>Our Portfolio</span>
+          <span className="eyebrow" style={{ color: 'var(--color-accent-dark)' }}>Our Portfolio</span>
           <h1>Architectural Installations</h1>
           <p>
             A curated selection of bespoke shower enclosures installed across premier luxury apartments, private residences, and heritage bungalows.
@@ -169,7 +169,7 @@ export default function Projects() {
         <div className="container">
           <div className="send-bathroom-banner">
             <div className="banner-content">
-              <span className="eyebrow" style={{ color: '#C5A880' }}>Inspired By A Project?</span>
+              <span className="eyebrow" style={{ color: 'var(--color-accent-on-dark)' }}>Inspired By A Project?</span>
               <h2 className="banner-title">Build A Similar Enclosure For Your Home</h2>
               <p className="banner-desc">
                 Share the project photo you love along with your bathroom measurements. We will engineer a custom adaptation tailored precisely to your floor plan.

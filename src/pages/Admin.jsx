@@ -182,7 +182,7 @@ export default function Admin() {
               {leads.length === 0 ? (
                 <tr>
                   <td colSpan="7" style={{ textAlign: 'center', padding: '2rem', color: '#94A3B8' }}>
-                    No enquiries received yet. Submit a quote from <Link to="/quote" style={{ color: '#C5A880', textDecoration: 'underline' }}>/quote</Link> to test!
+                    No enquiries received yet. Submit a quote from <Link to="/quote" style={{ color: 'var(--color-accent-dark)', textDecoration: 'underline' }}>/quote</Link> to test!
                   </td>
                 </tr>
               ) : (
@@ -334,7 +334,7 @@ export default function Admin() {
             <table className="specs-table" style={{ margin: '0 0 1.5rem 0' }}>
               <tbody>
                 <tr><th>Customer Name</th><td>{selectedLead.name}</td></tr>
-                <tr><th>Phone / WhatsApp</th><td><a href={`tel:${selectedLead.mobile}`} style={{ color: '#C5A880', fontWeight: 600 }}>{selectedLead.mobile}</a></td></tr>
+                <tr><th>Phone / WhatsApp</th><td><a href={`tel:${selectedLead.mobile}`} style={{ color: 'var(--color-accent-dark)', fontWeight: 600 }}>{selectedLead.mobile}</a></td></tr>
                 <tr><th>Email</th><td>{selectedLead.email || 'Not provided'}</td></tr>
                 <tr><th>Location</th><td>{selectedLead.location}</td></tr>
                 <tr><th>Enclosure Type</th><td>{selectedLead.enclosure}</td></tr>

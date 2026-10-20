@@ -10,7 +10,7 @@ export default function Enclosures() {
           <nav className="breadcrumb" aria-label="Breadcrumb">
             <Link to="/">Home</Link> <span>/</span> <span>Shower Enclosures</span>
           </nav>
-          <span className="eyebrow" style={{ color: '#C5A880' }}>Architectural Systems</span>
+          <span className="eyebrow" style={{ color: 'var(--color-accent-dark)' }}>Architectural Systems</span>
           <h1>Custom Shower Enclosures</h1>
           <p>
             Engineered around your room geometry. Explore our four principal enclosure configurations, designed to elevate spaces from compact urban suites to expansive master wetrooms.
@@ -215,7 +215,7 @@ export default function Enclosures() {
         <div className="container">
           <div className="send-bathroom-banner">
             <div className="banner-content">
-              <span className="eyebrow" style={{ color: '#C5A880' }}>Need Expert Guidance?</span>
+              <span className="eyebrow" style={{ color: 'var(--color-accent-on-dark)' }}>Need Expert Guidance?</span>
               <h2 className="banner-title">Let Us Recommend The Perfect Enclosure</h2>
               <p className="banner-desc">Share your bathroom plan or site photos. Our technical advisors will evaluate door swing clearances, water spray zones, and provide an accurate CAD proposal.</p>
               <div className="banner-actions">

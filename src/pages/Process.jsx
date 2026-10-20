@@ -9,7 +9,7 @@ export default function Process() {
           <nav className="breadcrumb">
             <Link to="/">Home</Link> <span>/</span> <span>How It Works</span>
           </nav>
-          <span className="eyebrow" style={{ color: '#C5A880' }}>The BathCentric Journey</span>
+          <span className="eyebrow" style={{ color: 'var(--color-accent-dark)' }}>The BathCentric Journey</span>
           <h1>How It Works: Precision From Survey To Installation</h1>
           <p>
             A transparent, turnkey 5-step process designed to remove all guesswork. Because toughened safety glass cannot be cut or trimmed once tempered, precision measurement is everything.
@@ -177,7 +177,7 @@ export default function Process() {
         <div className="container">
           <div className="send-bathroom-banner">
             <div className="banner-content">
-              <span className="eyebrow" style={{ color: '#C5A880' }}>Ready To Begin?</span>
+              <span className="eyebrow" style={{ color: 'var(--color-accent-on-dark)' }}>Ready To Begin?</span>
               <h2 className="banner-title">Step 1 Starts With A Simple Bathroom Photo</h2>
               <p className="banner-desc">Upload photos of your bathroom space or message us directly on WhatsApp. We will help you select the ideal enclosure layout and schedule your laser measurement survey.</p>
               <div className="banner-actions">

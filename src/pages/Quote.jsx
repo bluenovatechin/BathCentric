@@ -163,7 +163,7 @@ export default function Quote() {
           <nav className="breadcrumb">
             <Link to="/">Home</Link> <span>/</span> <span>Book Free Site Visit &amp; Quote</span>
           </nav>
-          <span className="eyebrow" style={{ color: '#C5A880' }}>100% Free Doorstep Consultation</span>
+          <span className="eyebrow" style={{ color: 'var(--color-accent-dark)' }}>100% Free Doorstep Consultation</span>
           <h1>Book a Free Site Visit &amp; Quotation</h1>
           <p>
             Get 100% free doorstep laser measurement, layout advice, and a transparent quotation for custom glass partitions, shower enclosures, and matching luxury accessories.
