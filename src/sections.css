@@ -1,0 +1,90 @@
+/* =============================================================================
+   Services, quality assurance, mirrors, drains, accessories and the detailed quote form.
+   ============================================================================= */
+
+/* ---------- Card grids (services, beyond the shower) ---------- */
+.svc-cards { display: grid; gap: 40px 24px; }
+@media (min-width: 760px) { .svc-cards { grid-template-columns: repeat(3, 1fr); } }
+.card-media.wide { aspect-ratio: 3 / 2; }
+.svc-text { margin-top: 14px; font-size: 0.93rem; }
+
+/* ---------- Wet & dry ---------- */
+.wetdry { display: grid; gap: 1px; background: var(--line-ink); border: 1px solid var(--line-ink); }
+@media (min-width: 760px) { .wetdry { grid-template-columns: 1fr 1fr; } }
+.wetdry-col { background: var(--ink); padding: clamp(28px, 4vw, 52px); }
+.wetdry-col.is-with { background: #132a3d; }
+.wetdry-col ul { display: grid; gap: 14px; margin-top: 22px; }
+.wetdry-col li { display: flex; gap: 14px; align-items: flex-start; color: var(--on-ink-2); font-size: 1.02rem; }
+.wetdry-col li svg { flex-shrink: 0; margin-top: 5px; color: #e58b82; }
+.wetdry-col.is-with li { color: var(--on-ink); }
+.wetdry-col.is-with li svg { color: var(--wave); }
+
+/* ---------- Numbered commitments ---------- */
+.commit-grid { display: grid; border-top: 1px solid var(--line-2); }
+@media (min-width: 700px) { .commit-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1000px) { .commit-grid { grid-template-columns: repeat(3, 1fr); } }
+.commit-grid li { padding: 32px 28px 36px 0; border-bottom: 1px solid var(--line-2); }
+.commit-grid b { font-family: var(--serif); font-weight: 400; font-size: 1.1rem; color: var(--wave-ink); }
+.commit-grid .h3 { margin: 12px 0 10px; }
+.commit-grid p { color: var(--slate); font-size: 0.95rem; }
+.on-ink .commit-grid, .on-ink .commit-grid li { border-color: var(--line-ink); }
+.on-ink .commit-grid b { color: var(--wave); }
+.on-ink .commit-grid p { color: var(--on-ink-2); }
+
+/* ---------- Image + text rows ---------- */
+.frows { display: grid; }
+.frow { display: grid; gap: 32px; padding: clamp(48px, 7vw, 96px) 0; border-top: 1px solid var(--line-2); scroll-margin-top: calc(var(--header) + 12px); }
+.frows > .frow:first-child { border-top: 0; padding-top: clamp(32px, 5vw, 64px); }
+@media (min-width: 1000px) {
+  .frow { grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+  .frow:nth-child(even) .frow-media { order: 2; }
+}
+.frow .figure-frame.frow-media { aspect-ratio: 3 / 2; }
+.point-grid { display: grid; gap: 0 24px; margin-top: 28px; border-top: 1px solid var(--line-2); }
+@media (min-width: 560px) { .point-grid { grid-template-columns: 1fr 1fr; } }
+.point-grid > div { padding: 16px 0; border-bottom: 1px solid var(--line-2); }
+.point-grid dt { font-weight: 600; font-size: 0.95rem; }
+.point-grid dd { color: var(--slate); font-size: 0.9rem; margin-top: 4px; }
+
+/* ---------- Icon feature grid ---------- */
+.feat-grid { display: grid; gap: 1px; background: var(--line-2); border: 1px solid var(--line-2); }
+@media (min-width: 640px) { .feat-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1100px) { .feat-grid { grid-template-columns: repeat(4, 1fr); } }
+.feat-grid li { background: var(--paper); padding: 32px 28px; }
+.section:not(.section-paper) .feat-grid li { background: var(--bg); }
+.feat-grid svg { color: var(--wave-ink); }
+.feat-grid h3 { font-family: var(--serif); font-weight: 400; font-size: 1.45rem; line-height: 1.2; margin: 18px 0 10px; }
+.feat-grid p { color: var(--slate); font-size: 0.93rem; }
+
+/* ---------- Spec list ---------- */
+.spec-list { border-top: 1px solid var(--ink); }
+.spec-list > div { display: grid; grid-template-columns: minmax(110px, 0.4fr) 1fr; gap: 20px; padding: 16px 0; border-bottom: 1px solid var(--line-2); }
+.spec-list dt { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--slate); padding-top: 3px; }
+/* ---------- Mirrors / accessories ---------- */
+@media (min-width: 900px) { .addon-grid.two-up { grid-template-columns: repeat(2, 1fr); gap: 56px 40px; } }
+.addon-grid.two-up .figure-frame { aspect-ratio: 3 / 2; }
+.addon-card .ticks { margin: 16px 0 0; }
+.addon-card .link { display: inline-flex; }
+.seg-wrap { flex-wrap: wrap; margin-top: 4px; }
+@media (max-width: 560px) { .seg-wrap button { flex: 1 1 33%; padding: 0 10px; } .seg-wrap button + button { border-left: 0; } .seg-wrap { gap: 1px; background: var(--line-2); } .seg-wrap button { background: var(--bg); } }
+.swatch-row { display: flex; flex-wrap: wrap; gap: 12px 28px; padding: 22px 0; border-top: 1px solid var(--line-2); border-bottom: 1px solid var(--line-2); }
+.swatch-row li { display: inline-flex; align-items: center; gap: 10px; font-size: 0.82rem; letter-spacing: 0.14em; text-transform: uppercase; }
+
+/* ---------- Quote form parts ---------- */
+.form-part { padding: 8px 0 14px; }
+.form-part + .form-part { border-top: 1px solid var(--line); padding-top: 32px; }
+.form-part-h { display: flex; align-items: baseline; gap: 14px; font-family: var(--serif); font-weight: 400; font-size: clamp(1.4rem, 2.2vw, 1.75rem); line-height: 1.2; margin-bottom: 24px; }
+.form-part-h b { font-family: var(--sans); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; color: var(--wave-ink); }
+.form-part-hint { font-size: 0.86rem; color: var(--slate); margin: -12px 0 20px; }
+.form-summary { margin: 8px 0 28px; padding: 24px; background: var(--bg); border-left: 2px solid var(--wave-ink); }
+.form-summary dl { display: grid; gap: 6px; margin-top: 14px; }
+.form-summary dl > div { display: grid; grid-template-columns: minmax(120px, 0.45fr) 1fr; gap: 14px; font-size: 0.9rem; }
+.form-summary dt { color: var(--slate); }
+.form-summary dd { overflow-wrap: anywhere; }
+.form-summary .muted { margin-top: 10px; font-size: 0.9rem; }
+
+/* ---------- Menu / footer ---------- */
+.menu-wa { display: inline-flex; align-items: center; gap: 10px; justify-content: center; margin-top: 16px; color: var(--on-ink-2); font-size: 0.95rem; }
+.menu-wa:hover { color: #fff; }
+@media (min-width: 900px) { .footer-top { grid-template-columns: 1.3fr repeat(4, 1fr); gap: 40px; } }
+@media (min-width: 1100px) and (max-width: 1299px) { .nav a { padding: 10px 8px; letter-spacing: 0.12em; } .nav a::after { left: 8px; right: 8px; } }

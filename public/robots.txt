@@ -1,6 +1,0 @@
-# robots.txt for https://bathcentric.in
-User-agent: *
-Allow: /
-Disallow: /admin.html
-
-Sitemap: https://bathcentric.in/sitemap.xml

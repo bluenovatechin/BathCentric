@@ -1,0 +1,192 @@
+/* =============================================================================
+   Find your fit · Why a shower enclosure · Materials panel · Collection rows ·
+   Anatomy + plan · Glass & add-on picker · Glass and fittings pages
+   Site style: square edges, thin rules, left-aligned section heads; pill shapes only on buttons.
+   ============================================================================= */
+
+.tag { display: inline-block; width: max-content; padding: 6px 12px; border: 1px solid var(--wave); color: var(--accent-dark); background: #fff; font-family: var(--serif); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; }
+.sub-label { font-family: var(--serif); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent-dark); padding-bottom: 12px; margin-bottom: 22px; border-bottom: 1px solid var(--line-2); }
+
+/* ---------- 1 · Find your fit ---------- */
+.fit-tabs { display: grid; grid-template-columns: 1fr; border-top: 1px solid var(--line-2); border-left: 1px solid var(--line-2); }
+@media (min-width: 700px) { .fit-tabs { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.fit-tab { text-align: left; padding: 18px 20px; border: 0; border-right: 1px solid var(--line-2); border-bottom: 1px solid var(--line-2); background: var(--paper); cursor: pointer; display: grid; gap: 4px; transition: background-color 0.25s, color 0.25s; }
+.section-paper .fit-tab { background: var(--bg); }
+.fit-tab strong { font-family: var(--serif); font-weight: 600; font-size: 1.05rem; color: var(--navy); letter-spacing: -0.01em; }
+.fit-tab span { font-size: 0.82rem; color: var(--text-muted); }
+.fit-tab:hover { background: var(--accent-light); }
+.fit-tab.is-on, .section-paper .fit-tab.is-on { background: var(--navy); box-shadow: inset 0 -3px 0 var(--wave); }
+.fit-tab.is-on strong { color: #fff; }
+.fit-tab.is-on span { color: rgba(255, 255, 255, 0.78); }
+.fit-result { display: grid; gap: 28px; margin-top: clamp(28px, 4vw, 48px); }
+@media (min-width: 1000px) { .fit-result { grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; } }
+.fit-copy { display: grid; gap: 14px; align-content: start; }
+.fit-copy .h3 { font-size: clamp(1.4rem, 2.4vw, 1.9rem); }
+.fit-size { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; color: var(--text); }
+.fit-size svg { color: var(--wave); flex-shrink: 0; margin-top: 3px; }
+.fit-size strong { color: var(--navy); }
+.fit-challenge { border-left: 3px solid var(--wave); background: var(--bg); padding: 14px 18px; }
+.fit-challenge strong { display: block; font-family: var(--serif); font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent-dark); margin-bottom: 4px; }
+.fit-challenge p { color: var(--text); font-size: 0.95rem; }
+.fit-copy .ticks { margin: 0; }
+.fit-also { font-size: 0.9rem; color: var(--text-muted); }
+.fit-also a { color: var(--accent-dark); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.fit-media { margin: 0; }
+.fit-media picture { display: block; width: 100%; aspect-ratio: 3 / 2; overflow: hidden; background: var(--sand); animation: fadeIn 0.5s var(--ease); }
+.fit-media .ph { aspect-ratio: 3 / 2; }
+.fit-media figcaption { margin-top: 12px; font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--slate); }
+
+/* ---------- 2 · Why a shower enclosure ---------- */
+.why-grid { display: grid; border-top: 1px solid var(--line-ink); border-left: 1px solid var(--line-ink); }
+@media (min-width: 640px) { .why-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1000px) { .why-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.why-grid li { padding: 28px 24px 30px; border-right: 1px solid var(--line-ink); border-bottom: 1px solid var(--line-ink); transition: background-color 0.3s; }
+.why-grid li:hover { background: rgba(255, 255, 255, 0.04); }
+.why-icon { display: inline-grid; place-items: center; width: 44px; height: 44px; border: 1px solid rgba(51, 156, 211, 0.5); color: #8acdef; margin-bottom: 18px; }
+.why-grid h3 { font-family: var(--serif); font-weight: 600; font-size: 1.15rem; color: #fff; margin-bottom: 8px; letter-spacing: -0.01em; }
+.why-grid p { color: var(--on-ink-2); font-size: 0.92rem; line-height: 1.65; }
+@media (max-width: 639px) {
+  .why-grid li { display: grid; grid-template-columns: 44px 1fr; gap: 4px 16px; padding: 20px 18px; }
+  .why-icon { grid-row: span 2; margin-bottom: 0; }
+  .why-grid h3 { margin-bottom: 0; align-self: end; }
+}
+
+/* ---------- 3 · Materials panel ---------- */
+.glass-cards { display: grid; border-top: 1px solid var(--line-2); border-left: 1px solid var(--line-2); }
+@media (min-width: 760px) { .glass-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.g-card { border-right: 1px solid var(--line-2); border-bottom: 1px solid var(--line-2); background: var(--paper); }
+.g-card-media { aspect-ratio: 16 / 11; overflow: hidden; background: var(--sand); }
+.g-card-media picture { width: 100%; height: 100%; transition: transform 1s var(--ease); }
+.g-card:hover .g-card-media picture { transform: scale(1.04); }
+.g-card-body { padding: 20px 22px 24px; }
+.g-card-body h3 { font-family: var(--serif); font-weight: 600; font-size: 1.2rem; color: var(--navy); letter-spacing: -0.01em; }
+.g-tag { font-family: var(--serif); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent-dark); margin: 4px 0 10px; }
+.g-card-body > p:last-child { color: var(--text-muted); font-size: 0.93rem; line-height: 1.65; }
+@media (max-width: 639px) { .g-card-media { aspect-ratio: 16 / 9; } .g-card-body { padding: 16px 18px 20px; } }
+.g-more { margin-top: 20px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 20px; color: var(--text-muted); font-size: 0.93rem; }
+.finish-panel { display: grid; gap: 28px; }
+@media (min-width: 1000px) { .finish-panel { grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; } }
+.finish-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line-2); border-left: 1px solid var(--line-2); }
+@media (min-width: 560px) and (max-width: 999px) { .finish-cards { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.finish-card { display: grid; justify-items: center; gap: 8px; padding: 22px 10px; border: 0; border-right: 1px solid var(--line-2); border-bottom: 1px solid var(--line-2); background: var(--bg); cursor: pointer; transition: background-color 0.25s; }
+.finish-card .swatch { width: 44px; height: 44px; }
+.finish-card strong { font-family: var(--serif); font-weight: 600; font-size: 0.98rem; color: var(--navy); }
+.finish-card span { font-size: 0.72rem; color: var(--text-muted); letter-spacing: 0.12em; }
+.finish-card:hover { background: var(--accent-light); }
+.finish-card.is-on { background: #fff; box-shadow: inset 0 -3px 0 var(--wave); }
+.finish-info { display: grid; grid-template-columns: minmax(120px, 0.8fr) 1.2fr; gap: 24px; align-items: center; }
+.finish-photo { aspect-ratio: 1; overflow: hidden; background: #fff; border: 1px solid var(--line); display: grid; place-items: center; }
+.finish-photo picture { width: 100%; height: 100%; animation: fadeIn 0.45s var(--ease); }
+.finish-info .h3 { margin-bottom: 8px; }
+@media (max-width: 480px) { .finish-info { grid-template-columns: 110px 1fr; gap: 16px; } }
+
+/* ---------- 4 · Collection rows ---------- */
+.enc-rows { display: grid; gap: clamp(64px, 9vw, 120px); }
+.enc-row { display: grid; gap: 28px; align-items: center; }
+@media (min-width: 1000px) { .enc-row { grid-template-columns: 1fr 1fr; gap: 72px; } .enc-row.is-flip .enc-media { order: 2; } }
+.enc-media { aspect-ratio: 5 / 4; overflow: hidden; background: var(--sand); }
+.enc-media picture { width: 100%; height: 100%; }
+.enc-media .diagram { width: 86%; margin: 6% auto 0; }
+.enc-copy { display: grid; gap: 14px; align-content: start; }
+.enc-copy .h2 { margin: 2px 0; }
+.enc-copy .ticks { margin: 4px 0; }
+.enc-facts { border-top: 1px solid var(--line-2); }
+.enc-facts > div { display: grid; grid-template-columns: 120px 1fr; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--line-2); font-size: 0.9rem; }
+.enc-facts dt { font-family: var(--serif); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--slate); padding-top: 2px; }
+.enc-facts dd { color: var(--text); }
+@media (max-width: 480px) { .enc-facts > div { grid-template-columns: 1fr; gap: 2px; } }
+.enc-copy .actions { margin-top: 8px; }
+
+/* ---------- 5 · Anatomy + plan ---------- */
+.anat-top { display: grid; gap: 28px; }
+@media (min-width: 1000px) { .anat-top { grid-template-columns: 1.1fr 0.9fr; gap: 64px; align-items: start; } }
+.anat-steps { counter-reset: s; display: grid; margin-top: -10px; }
+.anat-steps li { counter-increment: s; display: grid; grid-template-columns: 44px 1fr; gap: 12px; padding: 16px 0; border-bottom: 1px solid var(--line-2); color: var(--text); font-size: 1rem; line-height: 1.6; }
+.anat-steps li::before { content: counter(s, decimal-leading-zero); font-family: var(--serif); font-weight: 600; font-size: 1.1rem; color: var(--wave-ink); }
+.anat-plan { margin: 0; background: #fff; border: 1px solid var(--line-2); padding: 16px; }
+.anat-plan figcaption { margin-top: 12px; font-size: 0.9rem; color: var(--text-muted); }
+.anat-plan figcaption strong { color: var(--navy); }
+.plan { width: 100%; height: auto; display: block; }
+.pv-floor { fill: #f7f9fb; }
+.pv-wall { fill: none; stroke: #55565a; stroke-width: 8; stroke-linecap: square; }
+.pv-glass { stroke: #339cd3; stroke-width: 4; }
+.pv-glass.is-door { stroke: #14638f; }
+.pv-open { stroke: #9aa5ae; stroke-width: 1.5; stroke-dasharray: 4 4; }
+.pv-swing { fill: rgba(51, 156, 211, 0.12); stroke: #339cd3; stroke-width: 1; stroke-dasharray: 3 3; }
+.pv-arrow { stroke: #14638f; stroke-width: 1.6; fill: none; }
+.pv-room { font: 600 13px var(--serif); fill: #133855; text-anchor: middle; letter-spacing: 0.04em; }
+.pv-note { font: 500 9.5px var(--sans); fill: #5d6675; text-anchor: middle; }
+.anat { display: grid; gap: 24px; }
+@media (min-width: 1000px) { .anat { grid-template-columns: 1.1fr 0.9fr; gap: 56px; align-items: start; } .anat-sheet { position: sticky; top: calc(var(--header) + 24px); } }
+.anat-sheet { background: #fff; border: 1px solid var(--line-2); padding: clamp(16px, 2.4vw, 24px); display: grid; gap: 12px; }
+.anat-sheet .diagram { width: 100%; }
+.anat-now { font-size: 0.92rem; color: var(--text); border-left: 3px solid var(--wave); background: var(--accent-light); padding: 12px 14px; display: flex; gap: 12px; align-items: baseline; }
+.anat-now b { flex-shrink: 0; display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--wave); color: #fff; font-size: 0.78rem; }
+.anat-now strong { color: var(--navy); }
+.anat-parts { display: grid; border-top: 1px solid var(--line-2); }
+.anat-parts button { width: 100%; display: grid; grid-template-columns: 30px 56px 1fr; gap: 14px; align-items: center; text-align: left; padding: 12px 10px; border: 0; border-bottom: 1px solid var(--line-2); background: transparent; cursor: pointer; transition: background-color 0.2s; }
+.anat-parts button:hover { background: rgba(51, 156, 211, 0.06); }
+.anat-parts button.is-on { background: #fff; box-shadow: inset 3px 0 0 var(--wave); }
+.anat-parts .n { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--wave); color: var(--accent-dark); font-size: 0.8rem; font-weight: 600; }
+.anat-parts button.is-on .n { background: var(--wave); color: #fff; }
+.anat-parts .pic { width: 56px; height: 56px; overflow: hidden; background: #fff; border: 1px solid var(--line); }
+.anat-parts .pic picture { width: 100%; height: 100%; }
+.anat-parts strong { display: block; font-family: var(--serif); font-weight: 600; color: var(--navy); font-size: 1rem; }
+.anat-parts small { display: block; color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; }
+.diagram .dg-callout circle { transition: r 0.2s, fill 0.2s; }
+.diagram .dg-callout.is-on circle { fill: var(--wave); r: 11; }
+.diagram .dg-callout.is-on text { fill: #fff; }
+.diagram .dg-callout.is-on line { stroke: var(--wave); stroke-width: 1.6; }
+.diagram .dg-callout.is-dim { opacity: 0.4; }
+.diagram .dg-fit.is-on { fill: var(--wave); filter: drop-shadow(0 0 4px rgba(51, 156, 211, 0.9)); }
+.diagram .dg-rod.is-on { stroke: var(--wave); }
+
+/* ---------- 6 · Glass & add-on picker ---------- */
+.pick-sub { display: grid; gap: 24px; }
+.pick-sub + .pick-sub { margin-top: clamp(48px, 6vw, 80px); }
+@media (min-width: 900px) { .pick-sub { grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; } .pick-img { position: sticky; top: calc(var(--header) + 24px); } }
+.pick-intro { margin: -8px 0 16px; font-size: 0.95rem; }
+.pick-list { border-top: 1px solid var(--line-2); }
+.pick-list button { width: 100%; text-align: left; padding: 14px 14px 14px 16px; border: 0; border-bottom: 1px solid var(--line-2); background: transparent; cursor: pointer; display: grid; gap: 4px; transition: background-color 0.2s; }
+.pick-list button:hover { background: rgba(51, 156, 211, 0.06); }
+.pick-list button.is-on { background: #fff; box-shadow: inset 3px 0 0 var(--wave); }
+.pk-row { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+.pk-row strong { font-family: var(--serif); font-weight: 600; color: var(--navy); font-size: 1.02rem; }
+.pk-row em { font-style: normal; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent-dark); white-space: nowrap; }
+.pick-list small { color: var(--text-muted); font-size: 0.88rem; line-height: 1.55; }
+.pick-img { margin: 0; }
+.pi-frame { aspect-ratio: 4 / 3; overflow: hidden; background: var(--sand); }
+.pi-frame picture { width: 100%; height: 100%; animation: fadeIn 0.45s var(--ease); }
+.pick-img figcaption { margin-top: 12px; font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--slate); }
+@media (max-width: 899px) { .pick-img { order: -1; } }
+
+/* ---------- Shower glass page ---------- */
+.glass-range { display: grid; border-top: 1px solid var(--line-2); border-left: 1px solid var(--line-2); }
+@media (min-width: 640px) { .glass-range { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1000px) { .glass-range { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.glass-range > li { border-right: 1px solid var(--line-2); border-bottom: 1px solid var(--line-2); background: var(--paper); display: grid; grid-template-rows: auto 1fr; }
+.gr-media { position: relative; aspect-ratio: 16 / 11; overflow: hidden; background: var(--sand); }
+.gr-media picture { width: 100%; height: 100%; }
+.gr-media .tag { position: absolute; left: 14px; top: 14px; }
+.gr-body { padding: 20px 22px 24px; display: grid; gap: 10px; align-content: start; }
+.gr-body h3 { font-family: var(--serif); font-weight: 600; font-size: 1.2rem; color: var(--navy); letter-spacing: -0.01em; }
+.gr-body > p { color: var(--text-muted); font-size: 0.93rem; line-height: 1.65; }
+.meters { display: grid; gap: 6px; padding: 10px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.meter { display: grid; grid-template-columns: 64px 1fr 92px; gap: 10px; align-items: center; font-size: 0.76rem; color: var(--slate); }
+.meter i { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3px; }
+.meter i b { height: 6px; background: var(--line-2); }
+.meter i b.on { background: var(--wave); }
+.meter span:last-child { color: var(--text); font-weight: 600; text-align: right; }
+.gr-best { font-size: 0.86rem; color: var(--text); }
+.gr-best strong { color: var(--navy); }
+
+/* ---------- Seals / handles (fittings page) ---------- */
+.hw-grid { display: grid; border-top: 1px solid var(--line-2); border-left: 1px solid var(--line-2); }
+@media (min-width: 900px) { .hw-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.hw-grid > li { border-right: 1px solid var(--line-2); border-bottom: 1px solid var(--line-2); background: var(--paper); }
+.hw-grid .figure-frame { aspect-ratio: 3 / 2; }
+.hw-body { padding: 20px 22px 24px; }
+.hw-body h3 { font-family: var(--serif); font-weight: 600; font-size: 1.2rem; color: var(--navy); }
+.hw-body > p { color: var(--text-muted); font-size: 0.93rem; margin: 8px 0 4px; }
+.hw-body .ticks { margin: 12px 0 0; }
+@media (max-width: 999px) { .fit-media { order: -1; } }

@@ -1,31 +1,13 @@
-import { defineConfig } from 'vite';
+import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
 
-export default defineConfig(({ command }) => {
-  const isBuild = command === 'build';
-  const base = isBuild ? '/BathCentric/' : '/';
-
+// BASE_PATH is '/BathCentric/' on GitHub Pages (project site) and '/' on Vercel / your own domain.
+export default defineConfig(({ command, mode }) => {
+  const env = loadEnv(mode, process.cwd(), '');
   return {
-    plugins: [
-      react(),
-      {
-        name: 'base-path-replace',
-        enforce: 'pre',
-        transform(code, id) {
-          if (id.includes('node_modules')) return;
-          if (isBuild && (id.endsWith('.jsx') || id.endsWith('.js'))) {
-            return {
-              code: code.replace(/(['"])\/images\//g, `$1${base}images/`),
-              map: null
-            };
-          }
-        }
-      }
-    ],
-    base,
-    server: {
-      port: 5173,
-      open: false
-    }
+    plugins: [react()],
+    base: command === 'build' ? env.BASE_PATH || '/BathCentric/' : '/',
+    build: { target: 'es2019', cssCodeSplit: false, assetsInlineLimit: 0 },
+    ssr: { noExternal: [/^@fontsource/] },
   };
 });

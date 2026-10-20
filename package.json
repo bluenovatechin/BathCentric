@@ -4,22 +4,21 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node scripts/images.mjs && vite",
+    "build": "node scripts/images.mjs && vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node scripts/prerender.mjs",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "check:images": "node scripts/check-images.mjs",
-    "optimize:images": "node scripts/optimize-images.mjs"
+    "images": "node scripts/images.mjs",
+    "check:links": "node scripts/check-links.mjs"
   },
   "dependencies": {
+    "@fontsource-variable/outfit": "^5.3.0",
+    "@fontsource-variable/plus-jakarta-sans": "^5.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.1",
-    "gh-pages": "^6.3.0",
     "sharp": "^0.35.4",
     "vite": "^5.4.6"
   }
